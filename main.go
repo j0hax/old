@@ -68,6 +68,7 @@ func Rename(path string) error {
 		return err
 	}
 
+	fmt.Printf("moving %s to %s\n", path, newPath)
 	return os.Rename(path, newPath)
 }
 
